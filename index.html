@@ -18,29 +18,29 @@
             <!--  главное меню шапки -->
             <div class="container main-nav">
                 <nav class="nav">
-                    <a href="/" class="logo"><span class="accent-color">Web</span>Studio</a>
+                    <a href="/" class="logo"><span class="logo__accent-color">Web</span>Studio</a>
                     <ul class="site-nav list">
-                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li class="item"><a href="./contacts.html" class="link">Контакты</a></li>
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link--current">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <ul class="contact-nav list">
-                    <li class="item">
+                    <li class="contact-nav__item">
                         <!-- <span class="icon-flex"> -->
-                            <a href="mailto:" class="text link">
+                            <a href="mailto:" class="contact-nav__link text ">
                
-                                <svg class="icon-evelope">
+                                <svg class="contact-nav__icon-evelope">
                                     <use href="./images/sprite.svg#icon-envelope"></use>
                                 </svg>
                                 info@devstudio.com</a>
                         <!-- </span> -->
                     </li>
         
-                    <li class="item">
-                        <a href="tel:+380961111111" class="text link">
+                    <li class="contact-nav__item">
+                        <a href="tel:+380961111111" class="contact-nav__link text">
                             <!-- <span class="icon-flex"> -->
-                                <svg class="icon-smartphone">
+                                <svg class="contact-nav__icon-smartphone">
                                     <use href="./images/sprite.svg#icon-smartphone"></use>
                                 </svg>
                                 +38 096 111 11 11
@@ -55,9 +55,11 @@
         <!--  / Шапка сайта -->
     <main>
         <!-- Герой -->
-        <section class="hero container">
-                <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+        <section class="container hero">
+              <!-- <div class="container"> -->
+                    <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
+                    <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+              <!-- </div> -->
     
         </section>
         <!-- / Герой -->
@@ -65,57 +67,57 @@
     <!-- Особенности -->
     <section class="section features">
         <div class="container">
-            <h2 class="visually-hidden">features</h2>
+            <h2 class="features__title--visually-hidden">features</h2>
             <!--заголовок нужно спрятать-->
-            <ul class="features list">
-                <li class="item">
-                    <div class="test-icon">
-                        <svg class="icon-antenna">
+            <ul class="features-list list">
+                <li class="features-list__item">
+                    <div class="features-list__card-set">
+                        <svg class="features-list__icon-antenna">
                             <use href="./images/sprite.svg#icon-antenna"></use>
                         </svg>
                     </div>
-                    <h3 class="features-title">Внимание к деталям</h3>
-                    <p class="text">
+                    <h3 class="features-list__title">Внимание к деталям</h3>
+                    <p class="features-list__text">
                         Идейные соображения, а также начало
                         повседневной работы по формированию позиции.
                     </p>
                 </li>
     
-                <li class="item">
-                    <div class="test-icon">
-                        <svg class="icon-clock">
+                <li class="features-list__item">
+                    <div class="features-list__card-set">
+                        <svg class="features-list__icon-clock">
                             <use href="./images/sprite.svg#icon-clock"></use>
                         </svg>
                     </div>
-                    <h3 class="features-title">Пунктуальность</h3>
-                    <p class="text">
+                    <h3 class="features-list__title">Пунктуальность</h3>
+                    <p class="features-list__text">
                         Задача организации, в особенности
                         же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
     
-                <li class="item">
-                    <div class="test-icon">
-                        <svg class="icon-diagram">
+                <li class="features-list__item">
+                    <div class="features-list__card-set">
+                        <svg class="features-list__icon-diagram">
                             <use href="./images/sprite.svg#icon-diagram"></use>
                         </svg>
                     </div>
     
-                    <h3 class="features-title">Планирование</h3>
-                    <p class="text">Равным образом консультация с широким
+                    <h3 class="features-list__title">Планирование</h3>
+                    <p class="features-list__text">Равным образом консультация с широким
                         активом в значительной степени обуславливает.
                     </p>
                 </li>
     
-                <li class="item">
-                    <div class="test-icon">
-                        <svg class="icon-astronaut">
+                <li class="features-list__item">
+                    <div class="features-list__card-set">
+                        <svg class="features-list__icon-astronaut">
                             <use href="./images/sprite.svg#icon-astronaut"></use>
                         </svg>
                     </div>
     
-                    <h3 class="features-title">Современные технологии</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна,
+                    <h3 class="features-list__title">Современные технологии</h3>
+                    <p class="features-list__text">Значимость этих проблем настолько очевидна,
                         что реализация плановых заданий.
                     </p>
                 </li>
@@ -125,23 +127,23 @@
     <!-- / Особенности -->
 
         <!-- Чем мы занимаемся -->
-        <section class="section section-what-me-do">
+        <section class="section what-we-do">
             <div class="container">
-                <h2 class="title">Чем мы занимаемся</h2>
-                <ul class="what-we-do list">
-                    <li class="item">
+                <h2 class="what-we-do__title">Чем мы занимаемся</h2>
+                <ul class="what-we-do-list list">
+                    <li class="what-we-do-item">
                         <div class="thumb">
                             <img src="./images/index-img/work1.jpg" alt="Составление структуры сайта" width="370">
                             <p class="label">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="item">
+                    <li class="what-we-do-item">
                         <div class="thumb">
                             <img src="./images/index-img/work2.jpg" alt="Разработка мобильной версии " width="370">
                             <p class="label">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="item">
+                    <li class="what-we-do-item">
                         <div class="thumb">
                             <img src="./images/index-img/work3.jpg" alt="Подбор цветов" width="370">
                             <p class="label">Дизайнерские решения</p>
@@ -155,16 +157,16 @@
         <!-- Наша команда -->
         <section class="section team-page">
             <div class="container">
-                <h2 class="title">Наша команда</h2>
-                <ul class="team list">
-                    <li class="item card-team">
+                <h2 class="team-page__title">Наша команда</h2>
+                <ul class="team-page-list list">
+                    <li class="team-page-list__item team-page-list__item--card-team">
                       <!-- <article class="card-team"> -->
                            <div class="card-thumb">
-                                <img src="./images/index-img/team1.jpg" alt="Игорь Демьянченко" width="270">
+                                <img class="card-thumb__img" src="./images/index-img/team1.jpg" alt="Игорь Демьянченко" width="270">
                            </div>
                            <div class="none-border-bottom">
-                                <h3 class="title">Игорь Демьянченко</h3>
-                                <p class="text">Product Designer</p>
+                                <h3 class="team-page-list__title">Игорь Демьянченко</h3>
+                                <p class="team-page-list__text">Product Designer</p>
                             </div>
                             <!-- соцсети секция команда -->
                             <div class="team-social">
@@ -195,35 +197,35 @@
                             <!-- соцсети секция команда -->
                       <!-- </article> -->
                     </li>
-                    <li class="item card-team">
+                    <li class="team-page-list__item team-page-list__item--card-team">
                       <!-- <article class="card-team"> -->
                             <div class="card-thumb">
-                                <img src="./images/index-img/team2.jpg" alt="Игорь Демьянченко" width="270">
+                                <img class="card-thumb__img" src="./images/index-img/team2.jpg" alt="Игорь Демьянченко" width="270">
                             </div>
                            <div class="none-border-bottom">
-                                <h3 class="title">Ольга Репина</h3>
-                                <p class="text">Frondend Developer</p>
+                                <h3 class="team-page-list__title">Ольга Репина</h3>
+                                <p class="team-page-list__text">Frondend Developer</p>
                            </div>
                             <!-- соцсети секция команда -->
                             <div class="team-social">
                             
-                                <ul class="social-icons list">
-                                    <li><a href="" class="social-link">
+                                <ul class="social-list list">
+                                    <li class="social-list__item"><a href="" class="social-link">
                                             <svg class="instagram">
                                                 <use href="./images/sprite.svg#icon-instagram"></use>
                                             </svg>
                                         </a></li>
-                                    <li><a href="" class="social-link">
+                                    <li class="social-list__item"><a href="" class="social-link">
                                             <svg class="twitter">
                                                 <use href="./images/sprite.svg#icon-twitter"></use>
                                             </svg>
                                         </a></li>
-                                    <li><a href="" class="social-link">
+                                    <li class="social-list__item"><a href="" class="social-link">
                                             <svg class="facebook">
                                                 <use href="./images/sprite.svg#icon-facebook"></use>
                                             </svg>
                                         </a></li>
-                                    <li><a href="" class="social-link">
+                                    <li class="social-list__item"><a href="" class="social-link">
                                             <svg class="linkedin">
                                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                                             </svg>
@@ -233,14 +235,14 @@
                             <!-- соцсети секция команда -->
                       <!-- </article> -->
                     </li>
-                    <li class="item card-team">
+                    <li class="team-page-list__item team-page-list__item--card-team">
                         <!-- <article class="card-team"> -->
                             <div class="card-thumb">
-                                <img src="./images/index-img/team3.jpg" alt="Игорь Демьянченко" width="270">
+                                <img class="card-thumb__img" src="./images/index-img/team3.jpg" alt="Игорь Демьянченко" width="270">
                             </div>
                             <div class="none-border-bottom">
-                                <h3 class="title">Николай Тарасов</h3>
-                                <p class="text">Marketing</p>
+                                <h3 class="team-page-list__title">Николай Тарасов</h3>
+                                <p class="team-page-list__text">Marketing</p>
                             </div>
                             <!-- соцсети секция команда -->
                             <div class="team-social">
@@ -271,16 +273,15 @@
                             <!-- соцсети секция команда -->
                         <!-- </article> -->
                     </li>
-                    <li class="item card-team">
+                    <li class="team-page-list__item team-page-list__item--card-team">
                        <!-- <article class="card-team"> -->
                            <div class="card-thumb">
-                                <div class="card-thumb">
-                                    <img src="./images/index-img/team4.jpg" alt="Михайл Ермаков" width="270">
-                                </div>
+                                <img class="card-thumb__img" src="./images/index-img/team4.jpg" alt="Михайл Ермаков" width="270">
+                                
                            </div>
                             <div class="none-border-bottom">
-                                <h3 class="title">Михайл Ермаков</h3>
-                                <p class="text">Ul Designer</p>
+                                <h3 class="team-page-list__title">Михайл Ермаков</h3>
+                                <p class="team-page-list__text">Ul Designer</p>
                             </div>
                             <!-- соцсети секция команда -->
                             <div class="team-social">
