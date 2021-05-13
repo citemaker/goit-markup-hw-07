@@ -768,11 +768,6 @@ img {
   border: 1px rgba(238, 238, 238, 1);
 }
 
-.gallery__list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .filter__list {
   display: flex;
   justify-content: center;
@@ -804,7 +799,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* уточнить */
 .button__list {
   color: var(--title-color);
   background: var(--bg-second);
@@ -820,6 +815,10 @@ img {
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.gallery__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* CARD */
 .gallery__card-link {
   position: relative;
