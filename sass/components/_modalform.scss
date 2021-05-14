@@ -330,7 +330,7 @@ textarea {
       &:checked + .modalform__check-box,
       &:checked:focus + .modalform__check-box {
         background-color: $var3;
-        background-image: url("..");
+        background-image: url("../../images/check.svg");
         box-shadow: 0 0 0 2px $var3;
       }
       &:focus + .modalform__check-box {

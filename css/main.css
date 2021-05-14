@@ -1463,7 +1463,7 @@ textarea {
 .modalform__check-input:checked + .modalform__check-box,
 .modalform__check-input:checked:focus + .modalform__check-box {
   background-color: #2196f3;
-  background-image: url("..");
+  background-image: url("../../images/check.svg");
   -webkit-box-shadow: 0 0 0 2px #2196f3;
           box-shadow: 0 0 0 2px #2196f3;
 }
